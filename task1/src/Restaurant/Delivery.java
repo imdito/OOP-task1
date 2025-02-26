@@ -33,5 +33,17 @@ public class Delivery extends Order implements Payment {
         System.out.println("Driver akan segera berangkat!!");
     
     }
-    
+
+    @Override
+    public void printnota() {
+        System.out.println("Nama Customer   : " + customer.nama);
+        System.out.println("Pesanan         : ");
+        
+        for (int i = 0; i < menu.length; i++) {
+          System.out.println("                  " + menu[i].nama_menu + "  " + menu[i].harga); 
+        }
+        System.out.println("Jarak Tempuh    : " + jarak_tempuh + "KM");
+        System.out.println("Ongkir          : " + jarak_tempuh*2500);
+        System.out.println("Total           : " + total_harga);
+    }
 }

@@ -32,5 +32,16 @@ public class Takeaway extends Order implements Payment {
         System.out.println("Pembayaran take away berhasil dengan kembali Rp" + kembalian);
         System.out.println("Harap ambil pada " + waktuambil);
     }
-    
+
+    @Override
+    public void printnota() {
+       System.out.println("Nama Customer   : " + customer.nama);
+       System.out.println("Waktu ambil     : " + waktuambil);
+       System.out.println("Pesanan         : ");
+       
+        for (int i = 0; i < menu.length; i++) {
+          System.out.println("                  " + menu[i].nama_menu + "  " + menu[i].harga); 
+        }
+        System.out.println("Total           : " + total_harga);
+    }
 }

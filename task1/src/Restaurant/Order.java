@@ -23,5 +23,5 @@ abstract class Order {
     }
     
     public abstract void updatetotalharga();
-     
+    public abstract void printnota();
 }

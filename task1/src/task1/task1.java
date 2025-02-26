@@ -25,6 +25,7 @@ public class task1 {
        Dinein dinein = new Dinein(1, customer, listmenu);
        dinein.updatetotalharga();
        dinein.proseespembayaran(100000);
+       dinein.printnota();
        System.out.println(" ");
        System.out.println(" ");
        
@@ -32,6 +33,7 @@ public class task1 {
         Takeaway takeway = new Takeaway(2, customer, listmenu, "20.00");
         takeway.updatetotalharga();
         takeway.proseespembayaran(50000);
+        takeway.printnota();
         System.out.println(" ");
         System.out.println(" ");
         
@@ -39,6 +41,7 @@ public class task1 {
         Delivery delivery = new Delivery(3, customer, listmenu, 5);
         delivery.updatetotalharga();
         delivery.proseespembayaran(50000);
+        delivery.printnota();
         System.out.println(" ");
         System.out.println(" ");
        
